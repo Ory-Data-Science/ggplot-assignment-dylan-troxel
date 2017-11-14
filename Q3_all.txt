@@ -1,6 +1,6 @@
 library(tidyverse)
 
-dat <- read.csv(url("http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"), 
+dat <- read.csv(url("http://esapubs.org/archive/ecol/E084/093/Mammal_lifehistories_v2.txt"),
                 sep = "\t", nrows = 1440, na.strings = c("-999.00", "999.00"))
 
 #plot1
@@ -31,3 +31,4 @@ ggplot(data = dat, aes(x = mass.g., y = newborn.g.)) +
    facet_wrap(~ order, nrow = 4, ncol = 5)
 
 #Yes.  But, is it art?
+# All in the eye of the beholder
